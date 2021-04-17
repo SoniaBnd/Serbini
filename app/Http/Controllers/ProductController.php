@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use WooCommerce;
+use Order;
 
 class ProductController extends Controller
 {
