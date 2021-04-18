@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ 
 Route::get('/', function () {
     return view('welcome');
 });
@@ -48,11 +48,12 @@ Route::get('/products', function(){
 }); */
 
 Route::get('/products/{id}', 'ProductController@product')->name('product');
+//Route::get('/products/{id}', 'OrderController@product1')->name('order');
 
 //Route::get('/products/{post}', function () {})->name('post.show');
 
 Route::get('/products2', function(){
-
+ 
     $products = WooCommerce::all('products');
 
     return view('products.list', [

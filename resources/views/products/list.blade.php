@@ -12,4 +12,4 @@
  @endforeach
 </table>
 
-@endsection
+@endsection 
